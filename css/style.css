@@ -57,27 +57,44 @@ header:after {
 }
 .main {
 	height: 100vh;
-	background-image: url(../images/main.png);
+	background-image: url(../images/main-dark.png);
 	background-size: cover;
-/*	background-attachment: fixed | scroll | local;*/
+	background-attachment: fixed;  
 }
 .main-logo {
-	position: relative;
-	top: 25%;
+	position: absolute;
+	top: 20%;
 	left: 50%;
-	width: 161px;
-	transform: translateY(-25%);
+	width: 370px;
+	transform: translateY(-20%);
 	transform: translateX(-50%);
 	z-index: 0;
 }
 .main-logo p {
 	margin: 0 auto;
+	text-transform: uppercase;
 	font-family: 'Caveat Brush';
 	font-size: 75px;
 	text-align: center;
 	color: #fff;
 }
+.main-logo p:first-child {
+	font-family: 'PT Sans Narrow';
+	font-weight: bold;
+}
 .logotype {
+	margin: 20px 0 0 105px;
+/*	margin-left: 105px;*/
 	width: 161px;
 	height: 167px;
 }
+.main-social {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	width: 165px;
+	transform: translateY(-90%);
+	transform: translateX(-50%);
+	z-index: 0;
+}
+
