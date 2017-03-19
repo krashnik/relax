@@ -6,6 +6,9 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Caveat+Brush" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|Sansita|Yeseva+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum|Sansita|Yeseva+One" rel="stylesheet"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -17,19 +20,19 @@
 		</div>
 		<div class="menu menu-style">
 			<ul>
-				<li><a href="#">главная</a></li>
-				<li><a href="#">услуги</a></li>
-				<li><a href="#">работы</a></li>
-				<li><a href="#">о нас</a></li>
-				<li><a href="#">контакты</a></li>
-				<li><a href="#">запись</a></li>
+				<li><a href="#main">главная</a></li>
+				<li><a href="#service">услуги</a></li>
+				<li><a href="#works">работы</a></li>
+				<li><a href="#about">о нас</a></li>
+				<li><a href="#contacts">контакты</a></li>
+				<li><a href="#contacts">запись online</a></li>
 			</ul>
 		</div>
 	</header>
 	<div class="content">
-		<div class="main">
+		<div id="main" class="main">
 			<div class="main-logo">
-				<p>автомойка</p>
+				<h1 class="h1">автомойка</h1>
 				<p>relax</p>
 				<img class="logotype" src="images/logotype.png" alt="logotype" />
 			</div>
@@ -39,22 +42,101 @@
 				<a href="#"><img src="images/inst.png" alt="logotype" /></a>
 			</div>
 		</div>
-		<div class="service">
-			<p>услуги</p>
-			<p>&#5852; комплексная мойка высоким давлением &#5852;</p>
-			<p>&#5852; профессиональная полировка кузова &#5852;</p>
-			<p>&#5852; покрытие воском и полиролью &#5852;</p>
-			<p>&#5852; удаление насекомых и битума &#5852;</p>
-			<p>&#5852; химчитска салона и ковров &#5852;</p>
-			<p>&#5852; ручная мойка автомобиля &#5852;</p>
-			<p>&#5852; мойка двигателя &#5852;</p>
-			<p>&#5852; экспрессмойка &#5852;</p>
-			<p>&#5852; нано-покрытие &#5852;</p>
-			<p>&#5852; детейлинг &#5852;</p>
+		<div class="service" id="service">
+			<h2 class="h2">наши услуги:</h2>
+			<div class="service__flex">
+			<img src="images/car1.png">
+			<ul>
+				<li>комплексная мойка высоким давлением</li>
+				<li>профессиональная полировка кузова</li>
+				<li>покрытие воском и полиролью</li>
+				<li>удаление насекомых и битума</li>
+				<li>химчитска салона и ковров</li>
+				<li>ручная мойка автомобиля</li>
+				<li>мойка двигателя</li>
+				<li>экспрессмойка</li>
+				<li>нано-покрытие</li>
+				<li>детейлинг</li>
+			</ul>
+			<img src="images/car2.png">
+			</div>
 		</div>
-		<div class="works">
-							
+		<div id="works" class="works">
+				<h2 class="h2">наши работы:</h2>
+				<h3 class="h3">автомобили, преобразившиеся благодаря нам</h3>
+				<div class="works__img">
+					<img src="images/photo1.png" alt="1">
+					<img src="images/photo2.png" alt="2">
+					<img src="images/photo3.png" alt="3">
+					<img src="images/photo6.png" alt="4">
+					<img src="images/photo5.png" alt="5">
+					<img src="images/photo4.png" alt="6">
+				</div>			
+		</div>
+		<div id="about" class="about">
+			<h2 class="h2">кто мы</h2>
+			<h3 class="h3">автомойка, которую вы полюбите по 5 причинам:</h3>
+			<div class="about__infoblocks">
+				<div class="infoblock">
+					<img src="images/22.png" alt="">
+					низкие цены<br>комплекс от 250 руб
+				</div>
+				<div class="infoblock">
+					<img src="images/11.png" alt="">
+					<br>5 боксов, которые обеспечивают отсутствие очередей
+				</div>
+				<div class="infoblock">
+					<img src="images/55.png" alt="">
+					качественная мойка с продувкой и бесплатная обработка салона нано-ароматизатором
+				</div>
+				<div class="infoblock">
+					<img src="images/44.png" alt="">
+					удобный зал ожидания
+				</div>
+				<div class="infoblock">
+					<!-- предварительная запись по тел.: <a href="tel:+79250631324">8-925-063-13-24</a>, а также запись (якорь)онлайн. -->
+					<img src="images/33.png" alt="">
+					работаем 24 часа
+				</div>
+			</div>
+		</div>
+		<div id="contacts" class="contacts">
+			<div class="h2-flex">
+				<h2 class="h2">контакты</h2>
+				<h2 class="h2">запись online</h2>
+			</div>
+			<h3 class="h3">позвони нам или отправь заявку онлайн</h3>
+			<div class="contacts__infoblocks">
+				<div class="infoblocks-style">
+					<p>Тверь, пер. Зиновия Тальвинского, д.51, к.4 <br>(напротив бывшего ПТУ №6)</p>
+					<p>tver.moika@ya.ru</p>
+					<p>Телефон: +7-952-063-1324</p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0w8djsJsLK9FmqMtUht-mbw0sKQbuTWq&amp;width=640&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+				<div class="infoblocks-style">
+					<p>Тверь, пер. Зиновия Тальвинского, д.51, к.4 <br>(напротив бывшего ПТУ №6)</p>
+					<p>tver.moika@ya.ru</p>
+					<p>Телефон: +7-952-063-1324</p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=0w8djsJsLK9FmqMtUht-mbw0sKQbuTWq&amp;width=640&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+				</div>
+			</div>
 		</div>
 	</div>
 </body>
+<script>
+$(function(){
+    $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({scrollTop: targetOffset}, 600);//скорость прокрутки
+                return false;
+            }
+        }
+    });
+});
+</script>
 </html>

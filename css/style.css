@@ -1,3 +1,4 @@
+@import(normalize.css);
 *{
 	box-sizing: border-box;
 }
@@ -57,51 +58,176 @@ header div {
 	background-image: url(../images/main-dark.png);
 	background-size: cover;
 	background-attachment: fixed;
+/*	z-index: 9999;*/
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;  
 }
 .main-logo {
-}
-.main-logo p {
 	margin: 0 auto;
 	text-transform: uppercase;
-	font-family: 'Caveat Brush';
-	font-size: 75px;
 	text-align: center;
 	color: #fff;
 }
-.main-logo p:first-child {
-	font-family: 'PT Sans Narrow';
+.main-logo p {
+	margin: 0 auto;
+	font-size: 75px;
+	font-family: 'Caveat Brush';
+}
+.h1 {
+	margin: 0 auto;
+	font-size: 60px;
+	font-family: 'Cuprum';
 	font-weight: bold;
 }
 .logotype {
-	margin: 20px 0 0 105px;
+	margin-top: 60px;
 	width: 161px;
 	height: 167px;
 }
 .main-social {
-	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	width: 170px;
+	margin-top: 60px;
 }
 .service {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	background-image: url(../images/service1.png);
 	background-size: cover;
-	height: 560px;
+	min-height: 100vh;
 }
-.service p {
-	margin: 0 0 15px;
+.service__flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1000px;
+}
+.service ul li {
+	list-style-type: none; /*таблица с прайсом вместо списка */
 	text-align: center;
-	text-transform: uppercase;
 	font-family: 'PT Sans Narrow';
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 1.4;
 	color: #fff;
 }
-.service p:first-child {
+.h2 {
+	text-align: center;
+	margin: 0 0;
+	text-transform: uppercase;
+	font-family: 'Cuprum';
+	color: #fff;
 	font-size: 70px;
+	line-height: 1.4;
 }
 .works {
-	background-color: #819d84;
-	height: 560px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../images/wet.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	min-height: 100vh;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+}
+.h3 {
+	margin: 0 0;
+	font-size: 30px;
+	font-family:'PT Sans Narrow';
+	font-weight: bold;
+	line-height: 1.4;
+}
+.works__img {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 1040px;
+}
+.works__img img {
+	padding-top: 20px;
+/*	padding: 10px 0 10px 0;*/
+}
+.about {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-image: url(../images/carwash_back.png);
+	background-size: cover;
+	min-height: 100vh;
+	text-align: center;
+	text-transform: uppercase;
+}
+.h2-flex {
+	display: flex;
+	justify-content: space-between;
+	width: 1100px;
+	flex-wrap: wrap;
+}
+.about h2 {
+	margin-left: 20px;
+	color: #315559;
+}
+.about h3 {
+	color: #315559;
+}
+.about__infoblocks {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1300px;
+	margin: 0 auto;
+/*	height: 350px;*/
+}
+.infoblock {
+	width: 250px;
+	padding: 20px 10px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 6px;
+}
+.infoblock img {
+	padding-bottom: 20px;
+}
+.contacts {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+	background-image: url(../images/main-dark.png);
+	background-attachment: fixed;
+	background-size: cover;
+	/*display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;*/
+/*	width: 1300px;*/
+}
+.contacts h3 {
+	color: #fff;
+}
+.contacts__infoblocks {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 1370px;
+	margin: 0 auto;
+}
+.infoblocks-style {
+	padding: 15px 15px;
+	text-align: center;
+	color: #fff;
+	background: rgba(94, 130, 121, 0.5);
+	border-radius: 6px;
 }
